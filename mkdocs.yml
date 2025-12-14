@@ -19,8 +19,8 @@ markdown_extensions:
 nav:
   - Home: index.md
   - My Cookbooks:
-    - AIX Cookbook: guide/aix.md
-    - Linux Cookbook: guide/linux.md
+    - AIX Cookbook: guide/aix
+    - Linux Cookbook: guide/linux
 
 
 extra:
