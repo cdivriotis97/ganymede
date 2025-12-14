@@ -7,7 +7,7 @@ site_description: >-
 repo_url: https://github.com/snoopyx21/ganymede
 theme:
   name: material
-  logo: ./assets/logo-snoopy.png
+  logo: ./docs/assets/images/logo-snoopy.png
   #favicon: ./assets/favicon.ico
   features:
     - navigation.footer
