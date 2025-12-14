@@ -1,8 +1,7 @@
-## Steam on Linux
-
-### Quick Tutorial: How to Enable Proton for a Specific Game on Steam
+## Quick Tutorial: How to Enable Proton for a Specific Game on Steam
 
 If you're new to Linux after installing Steam, you might get this error :
+
 ![Error Steam with Linux when launching a game](../../assets/steam-error.png){ width="300" }
 /// caption
 Error Steam with Linux when launching a game

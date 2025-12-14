@@ -14,6 +14,9 @@ theme:
     - navigation.footer
     - navigation.indexes
 
+plugins:
+  - glightbox
+
 markdown_extensions:
   - admonition
   - pymdownx.details
