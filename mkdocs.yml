@@ -15,12 +15,17 @@ markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
+  - attr_list
+  - md_in_html
+  - pymdownx.blocks.caption
 
 nav:
   - Home: index.md
   - My Cookbooks:
-    - AIX Cookbook: guide/aix/general.md
-    - Linux Cookbook: guide/linux/general.md
+    - AIX Cookbook: guides/aix.md
+    - AIX Concepts: guides/aix/general.md
+    - Linux Cookbook: guides/linux.md
+    - Linux Concepts: guides/linux/general.md
 
 
 extra:

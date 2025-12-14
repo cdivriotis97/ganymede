@@ -6,7 +6,10 @@ This document provides an overview of the foundational concepts and essential ut
 
 The primary tool for managing AIX servers is the **System Management Interface Tool (SMITTY)**. SMITTY simplifies administration tasks and helps reduce errors by guiding the user through command structures.
 
-
+![smitty](/docs/assets/smitty.png){ width="300" }
+/// caption
+Image caption
+///
 
 **Installation and Updates**
 
