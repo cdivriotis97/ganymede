@@ -9,7 +9,7 @@ theme:
   name: material
   custom_dir: overrides
   logo: assets/images/logo.png
-  #favicon: ./assets/favicon.ico
+  favicon: assets/images/favicon.ico
   features:
     - navigation.footer
     - navigation.indexes
@@ -28,6 +28,7 @@ nav:
     - AIX Concepts: guides/aix/general.md
   - Linux Cookbook: 
     - Linux Concepts: guides/linux/general.md
+    - Steam on Linux: guides/linux/steam.md
 
 
 extra:
