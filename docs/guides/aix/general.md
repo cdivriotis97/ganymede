@@ -4,12 +4,6 @@
 
 AIX (Advanced Interactive eXecutive) is a specialized UNIX operating system that stands out due to its reliance on a proprietary internal database, the **Object Data Manager (ODM)**, which stores critical configuration data for the Logical Volume Manager (LVM) and system devices. For administrative tasks, the use of **SMITTY (System Management Interface Tool)** is highly recommended, as it simplifies complex commands and helps prevent common administrative errors.
 
-![smitty](../../assets/smitty.png){ width="300" }
-/// caption
-smitty
-///
-
-
 ### Logical Volume Manager (LVM)
 
 AIX's LVM virtualizes physical disks, offering a flexible and robust storage management system:
