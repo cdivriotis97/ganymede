@@ -1,5 +1,9 @@
-site_name: Blog Constantin Divriotis
+site_name: 'Blog @snoopyx21'
 site_dir: /var/www/mkdocs
+site_author: 'Constantin DIvriotis'
 site_url: https://ganymede.blog/
+site_description: >-
+  Constantin Divriotis | Playground
+repo_url: https://github.com/snoopyx21/ganymede
 theme:
   name: material
