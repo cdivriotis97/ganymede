@@ -32,6 +32,8 @@ nav:
   - Linux Cookbook: 
     - Linux Concepts: guides/linux/general.md
     - Steam on Linux: guides/linux/steam.md
+    - Linux Concepts: guides/linux/coreos.md
+    - Steam on Linux: guides/linux/podman-quadlet.md
 
 
 extra:

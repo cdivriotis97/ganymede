@@ -27,7 +27,7 @@ Error Steam with Linux when launching a game
 
 * Check the box next to **"Force the use of a specific Steam Play compatibility tool."**
 * A drop-down menu will appear below the checkbox.
-* **Select the desired Proton version** from the drop-down list (usually the latest version, such as **Proton 9.0** or **Proton Experimental**, is recommended). Sometimes get an older Proton version is needed.
+* **Select the desired Proton version** from the drop-down list (usually the latest version, such as **Proton 9.0** or **Proton Experimental**, is recommended). Sometimes, selecting an older Proton version is needed.
 
 ![Enabling Proton](../../assets/steam-proton.png){ width="300" }
 /// caption
