@@ -1,8 +1,4 @@
-Absolument \! Voici la version concise de l'article de blog sur Podman Quadlet, rédigée en anglais, avec l'inclusion de vos dépôts GitHub pour les exemples de monitoring.
-
------
-
-## 🚀 Podman Quadlet: The Modern Way to Manage Containers with `systemd`
+# Podman Quadlet
 
 Podman Quadlet is the essential tool for declarative deployment and management of Podman containers, especially in rootless mode, by leveraging the power of `systemd`. It effectively replaces the deprecated `podman generate systemd` command, simplifying the setup process dramatically.
 
