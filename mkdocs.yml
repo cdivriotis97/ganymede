@@ -8,12 +8,19 @@ repo_url: https://github.com/snoopyx21/ganymede
 theme:
   name: material
   custom_dir: overrides
-  logo: assets/images/logo.png
-  favicon: assets/images/favicon.ico
+  #logo: assets/images/logo.png
+  #favicon: assets/images/favicon.ico
+  language: en
   features:
     - navigation.footer
     - navigation.indexes
-
+    - navigation.path
+    - search.suggest
+    - search.share
+    - content.action.edit
+    - content.code.copy
+    - content.code.select
+    - content.tabs.link
 plugins:
   - glightbox
 
