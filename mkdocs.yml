@@ -55,6 +55,7 @@ nav:
     - Podman Quadlet: guides/linux/podman-quadlet.md
     - Troubleshooting: guides/linux/troubleshooting.md
     - Useful Commands: guides/linux/commands.md
+    - Applications: guides/linux/apps.md
 
 
 extra:

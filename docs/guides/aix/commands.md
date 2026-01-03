@@ -1,3 +1,3 @@
 # Useful Commands
 
-**Learn More:** [hhttps://github.com/snoopyx21/linux-aix](https://github.com/snoopyx21/linux-aix)
+**Learn More:** [[aix-cheatsheet](https://github.com/snoopyx21/aix-cheatsheet)](https://github.com/snoopyx21/aix-cheatsheet)

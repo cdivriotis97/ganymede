@@ -65,26 +65,3 @@ The Linux roadmap is collectively driven by major kernel developers, corporate c
 1.  **Cloud-Native and Performance**: Continuous kernel optimization for hyper-scalability and containerization (Docker, Kubernetes). This includes advanced I/O management via **`io_uring`** and deep integration of technologies like **eBPF (Extended Berkeley Packet Filter)** for powerful, safe in-kernel networking, security, and observability. 
 2.  **Security and Integrity**: Enhancing security frameworks like **SELinux** and **AppArmor**. Focus on achieving **immutable infrastructure** by using minimal system images to reduce the attack surface.
 3.  **Hardware Evolution**: Rapid adaptation to new CPU architectures (e.g., RISC-V) and maximizing performance from modern GPUs and accelerators in HPC and AI workloads.
-
-## Apps that I love 
-
-### Network
-    Netbox : https://github.com/netbox-community/netbox
-    Routinator : https://github.com/NLnetLabs/routinator
-    FreeRADIUS : https://github.com/FreeRADIUS/freeradius-server
-    PowerDNS : https://github.com/PowerDNS/pdns
-
-### Systems
-    Dashy : https://dashy.to
-    Password Pusher : https://github.com/pglombardo/PasswordPusher
-    Lufi : https://github.com/ldidry/lufi
-    DokuWiki : https://www.dokuwiki.org/dokuwiki
-    MKDocs : https://squidfunk.github.io/mkdocs-material/
-
-### Monitoring & Obervability
-    Zabbix : https://www.zabbix.com
-    LibreNMS : https://www.librenms.org/
-    Cillium : https://cilium.io/
-
-### Terminal
-    WindTerm : https://github.com/kingToolbox/WindTerm
