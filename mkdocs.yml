@@ -46,11 +46,15 @@ nav:
   - Home: index.md
   - AIX Cookbook:
     - AIX Concepts: guides/aix/general.md
+    - Troubleshooting: guides/aix/troubleshooting.md
+    - Useful Commands: guides/aix/commands.md
   - Linux Cookbook: 
     - Linux Concepts: guides/linux/general.md
     - Steam on Linux: guides/linux/steam.md
     - CoreOS: guides/linux/coreos.md
     - Podman Quadlet: guides/linux/podman-quadlet.md
+    - Troubleshooting: guides/linux/troubleshooting.md
+    - Useful Commands: guides/linux/commands.md
 
 
 extra:

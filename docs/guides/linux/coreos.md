@@ -23,7 +23,7 @@ The container engine, **Podman**, enables **rootless containers** & **auto-updat
 
 **FCOS delivers automation, security, and proven stability.**
 
-➡️ **See my implementation example:** [https://github.com/snoopyx21/coreos-sample](https://github.com/snoopyx21/coreos-sample)
+**See my implementation example:** [https://github.com/snoopyx21/coreos-sample](https://github.com/snoopyx21/coreos-sample)
 
-📚 **Learn More:** [https://docs.fedoraproject.org/en-US/fedora-coreos/](https://docs.fedoraproject.org/en-US/fedora-coreos/)
+**Learn More:** [https://docs.fedoraproject.org/en-US/fedora-coreos/](https://docs.fedoraproject.org/en-US/fedora-coreos/)
 
