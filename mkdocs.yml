@@ -56,7 +56,7 @@ nav:
     - Troubleshooting: guides/linux/troubleshooting.md
     - Useful Commands: guides/linux/commands.md
     - Applications: guides/linux/apps.md
-    - SSH: guides/linux/sshd.md
+    - SSH: guides/linux/ssh.md
 
 
 extra:
