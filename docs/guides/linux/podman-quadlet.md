@@ -24,7 +24,7 @@ Quadlet is perfectly suited for self-hosting and monitoring environments. Here a
 
 This file describes a standalone Grafana container with data persistence and automated image updates enabled.
 
-  * **My implementation example:**[snoopyx21/podman-quadlet-grafana](https://www.google.com/search?q=https://github.com/snoopyx21/podman-quadlet-grafana)
+  * **My implementation example:**  [snoopyx21/podman-quadlet-grafana](https://www.google.com/search?q=https://github.com/snoopyx21/podman-quadlet-grafana)
 
 <!-- end list -->
 
@@ -49,7 +49,7 @@ WantedBy=default.target
 
 Uptime Kuma is a popular, lightweight monitoring tool. Here is the simplified Quadlet configuration for its deployment.
 
-  * **My implementation example:** [snoopyx21/podman-quadlet-uptime-kuma](https://github.com/snoopyx21/podman-quadlet-uptime-kuma)
+  * **My implementation example:**  [snoopyx21/podman-quadlet-uptime-kuma](https://github.com/snoopyx21/podman-quadlet-uptime-kuma)
 
 <!-- end list -->
 
