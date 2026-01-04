@@ -60,24 +60,22 @@ TCPKeepAlive yes
 
 Hardening is a two-way street. Your local machine must also be configured to prevent credential leakage.
 
-    Isolation: Never use the same SSH key for every server. Generate a unique key pair for each service (GitHub, VPS, etc.).
-
-    Local Config: Use your ~/.ssh/config to disable dangerous features like ForwardAgent and UseRoaming (which can expose keys in MITM scenarios).
-
-    Strict Checking: Always use StrictHostKeyChecking yes to ensure you are alerted if a server's fingerprint changes.
+* Isolation: Never use the same SSH key for every server. Generate a unique key pair for each service (GitHub, VPS, etc.).
+* Local Config: Use your ~/.ssh/config to disable dangerous features like ForwardAgent and UseRoaming (which can expose keys in MITM scenarios).
+* Strict Checking: Always use StrictHostKeyChecking yes to ensure you are alerted if a server's fingerprint changes.
 
 ## Audit and Verification
 
 Applying a configuration is not enough; you must verify that it is active and correctly implemented.
 
-    SSH-Audit: Use [ssh-audit](https://www.sshaudit.com/) to perform a deep scan of your server. It will identify weak ciphers or outdated protocols and provide a security score. Your goal is a "Perfect" or "A" rating.
+* SSH-Audit: Use [ssh-audit](https://www.sshaudit.com/) to perform a deep scan of your server. It will identify weak ciphers or outdated protocols and provide a security score. Your goal is a "Perfect" or "A" rating.
+* Nmap: You can quickly verify the algorithms your server advertises to the world with the Nmap Scripting Engine (NSE): 
+```
+nmap --script ssh2-enum-algos -sV -p 22 <your-server-ip> 
+```
+This tool confirms that only your chosen secure ciphers (like Chacha20) are visible to potential attackers.
 
-    Nmap: You can quickly verify the algorithms your server advertises to the world with the Nmap Scripting Engine (NSE): 
-    ```
-    nmap --script ssh2-enum-algos -sV -p 22 <your-server-ip> 
-    ```
-    This tool confirms that only your chosen secure ciphers (like Chacha20) are visible to potential attackers.
 
-Conclusion
+## Conclusion
 
 SSH hardening is about reducing your attack surface to the absolute minimum. By moving to modern cryptographic standards and regularly auditing your exposure with sshaudit and nmap, you turn your remote access into a truly secure gateway.
