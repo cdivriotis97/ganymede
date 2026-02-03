@@ -14,4 +14,5 @@ mkdocs-serve:
 	$(VENV_PATH)/bin/mkdocs serve
 
 mkdocs-build:
+    git pull
 	$(VENV_PATH)/bin/mkdocs build

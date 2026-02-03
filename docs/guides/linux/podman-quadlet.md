@@ -14,8 +14,6 @@ To ensure your services remain up-to-date without manual intervention, Quadlet s
 
 By adding the option `AutoUpdate=registry` within the `[Container]` section, you instruct Podman to check for a newer image with the same tag in the registry when the `podman auto-update` command is run. This feature is crucial for maintaining security and stability with minimal effort.
 
------
-
 ## Monitoring Examples with Quadlet
 
 Quadlet is perfectly suited for self-hosting and monitoring environments. Here are configuration examples for deploying Grafana and Uptime Kuma using Quadlet files, allowing you to manage them easily with `systemctl --user`.
