@@ -1,10 +1,12 @@
+
 Collections needed :
 - cisco-nxos
 - ansible-netcommon
 - cisco-ios
 
 
-to backup nexus :    
+to backup nexus : 
+```ini
 	- name: get running-config
       nxos_command:
         commands: show running | exclude ^!Time
@@ -14,9 +16,10 @@ to backup nexus :
       nxos_command:
         commands: show startup | exclude ^!Time
       register: startup_cfg
-
+```
 
 to backup ios :
+```ini
     - name: get running-config
       ios_command:
         commands: show running | exclude ntp clock-period
@@ -28,8 +31,8 @@ to backup ios :
         commands: show startup | exclude ntp clock-period
       register: startup_cfg
       ignore_errors: true
-
-
+```
+```ini
 [all:vars]
 # START ansible.netcommon.network_cli connection
 # All these variable are for ansible.netcommon.network_cli connection
@@ -47,3 +50,4 @@ ansible_network_os=nxos
 
 [ios:vars]
 ansible_network_os=ios
+```
