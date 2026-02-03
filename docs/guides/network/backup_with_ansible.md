@@ -1,4 +1,4 @@
-# Backup Nexus & Cisco devices with Ansible
+# Backup Nexus & Cisco configuration with Ansible
 
 Requirements -- you need collections these collections :
  * cisco-nxos
