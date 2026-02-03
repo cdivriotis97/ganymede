@@ -1,4 +1,4 @@
-site_name: 'Blog @snoopyx21'
+site_name: 'Blog @cdivriotis'
 site_dir: /var/www/mkdocs
 site_author: 'Constantin Divriotis'
 site_url: https://ganymede.blog/
@@ -44,6 +44,9 @@ markdown_extensions:
 
 nav:
   - Home: index.md
+  - Miscellaneous:
+    #- About Me: about.md
+    - My Notes: notes.md
   - AIX Cookbook:
     - AIX Concepts: guides/aix/general.md
     - Troubleshooting: guides/aix/troubleshooting.md
@@ -58,9 +61,12 @@ nav:
     - Applications: guides/linux/apps.md
     - SSH: guides/linux/ssh.md
   - Storage Cookbook:
+    - Backup Configuration with Ansible: guides/storage/backup_with_ansible.md
     - Troubleshooting: guides/storage/troubleshooting.md
   - Monitoring Cookbook:
-    - Troubleshooting: guides/monitoring/zabbix.md
+    - Zabbix: guides/monitoring/zabbix.md
+  - Network Cookbook:
+    - Backup Configuration with Ansible: guides/storage/backup_with_ansible.md
 
 
 extra:
@@ -69,4 +75,4 @@ extra:
       link: https://github.com/snoopyx21
 
 
-copyright: Copyright &copy; 2025 Constantin Divriotis | Powered by GNU GPLv3
+copyright: Copyright &copy; 2026 Constantin Divriotis | Powered by GNU GPLv3
