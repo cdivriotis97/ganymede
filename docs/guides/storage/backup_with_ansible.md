@@ -11,6 +11,7 @@ To backup Brocade FOS :
       shell: "sshpass -p '{{ ansible_ssh_pass }}' ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no {{ ansible_user }}@{{ inventory_hostname }} switchshow"
       register: running_switch_cfg
       delegate_to: localhost
+
     - name: "Run cfgshow on brocade with all contexts"
       shell: |
         sshpass -p '{{ ansible_ssh_pass }}' ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no {{ ansible_user }}@{{ inventory_hostname }} << EOF
