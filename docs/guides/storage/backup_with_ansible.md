@@ -1,4 +1,5 @@
 To backup brocade :
+```ini
     - name: "Define context depending on brocade name"
       set_fact:
         contexts: "{{ [20, 40] if (inventory_hostname is search('brocade.*dc2')) else ([10, 30] if (inventory_hostname is search('brocade.*dc1')) else [1]) }}"
@@ -16,9 +17,10 @@ To backup brocade :
       register: running_zone_cfg
       loop: "{{ contexts }}"
       delegate_to: localhost
-
+```
 
 To backup IBM storage :
+```ini
     - name: "Trigger the configuration backup (svcconfig backup)"
       shell: "sshpass -p '{{ ansible_ssh_pass }}' ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no {{ ansible_user }}@{{ inventory_hostname }} 'svcconfig backup'"
       register: backup_output
@@ -28,7 +30,7 @@ To backup IBM storage :
       shell: "sshpass -p '{{ ansible_ssh_pass }}' scp -o StrictHostKeyChecking=no {{ ansible_user }}@{{ inventory_hostname }}:{{ backup_svc }}/svc.config.backup.*  {{ backup_folder }}/{{ inventory_hostname }}/"
       register: scp_output
       delegate_to: localhost
-
+```
 
 SANnav can create a daily backup. 
 Do not forget to push this backup outside SANnav.
