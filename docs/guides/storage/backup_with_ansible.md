@@ -1,4 +1,8 @@
-To backup brocade :
+# Backup Brocade FOS configuration & IBM configuration devices with Ansible
+
+This outlines the primary commands to back up the devices; however, the Ansible tasks for local data persistence and file generation are omitted.
+
+To backup Brocade FOS :
 ```ini
     - name: "Define context depending on brocade name"
       set_fact:
@@ -31,6 +35,7 @@ To backup IBM storage :
       register: scp_output
       delegate_to: localhost
 ```
+
 
 SANnav can create a daily backup. 
 Do not forget to push this backup outside SANnav.
