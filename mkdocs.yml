@@ -1,7 +1,7 @@
 site_name: 'Blog @cdivriotis97'
 site_dir: /var/www/mkdocs
 site_author: 'Constantin Divriotis'
-site_url: https://ganymede.blog/
+site_url: https://cdivriotis97.ganymede.blog/
 site_description: >-
   Constantin Divriotis | Playground
 repo_url: https://github.com/cdivriotis97/ganymede
