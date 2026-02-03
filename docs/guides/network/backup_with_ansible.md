@@ -35,7 +35,8 @@ To backup IOS :
       ignore_errors: true
 ```
 
-For network devices, you will need specific connection variables to access the devices (https://docs.ansible.com/ansible/latest/collections/ansible/netcommon/network_cli_connection.html[https://docs.ansible.com/ansible/latest/collections/ansible/netcommon/network_cli_connection.html]).
+For network devices, you will need specific connection variables to access the devices :
+ * [https://docs.ansible.com/ansible/latest/collections/ansible/netcommon/network_cli_connection.html](https://docs.ansible.com/ansible/latest/collections/ansible/netcommon/network_cli_connection.html).
 
 ```ini
 [all:vars]
