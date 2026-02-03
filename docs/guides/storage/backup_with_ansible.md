@@ -36,8 +36,9 @@ To backup IBM storage :
       register: scp_output
       delegate_to: localhost
 ```
+**Reference : ** 
+[https://www.ibm.com/docs/en/flashsystem-5x00?topic=STHGUJ/com.ibm.storwize.v5100.841.doc/svc_clustconfbackuptsk_1e4k69.html](https://www.ibm.com/docs/en/flashsystem-5x00?topic=STHGUJ/com.ibm.storwize.v5100.841.doc/svc_clustconfbackuptsk_1e4k69.html)
 
-https://www.ibm.com/docs/en/flashsystem-5x00?topic=STHGUJ/com.ibm.storwize.v5100.841.doc/svc_clustconfbackuptsk_1e4k69.htm
 
 SANnav can create a daily backup. 
 Do not forget to push this backup outside SANnav.
