@@ -46,7 +46,7 @@ nav:
   - Home: index.md
   - Miscellaneous:
     #- About Me: about.md
-    - My Notes: notes.md
+    - My Notes: guides/miscellaneous/notes.md
   - AIX Cookbook:
     - AIX Concepts: guides/aix/general.md
     - Troubleshooting: guides/aix/troubleshooting.md
