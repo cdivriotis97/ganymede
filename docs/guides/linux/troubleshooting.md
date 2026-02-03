@@ -20,4 +20,4 @@ rpm --rebuilddb
 yum clean all
 ```
 
-If the issue reoccurs, please follow the article : https://access.redhat.com/solutions/3330211 
+If the issue reoccurs, please follow the article : [https://access.redhat.com/solutions/3330211](https://access.redhat.com/solutions/3330211).
