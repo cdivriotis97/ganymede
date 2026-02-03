@@ -2,6 +2,7 @@
 
 This outlines the primary commands to back up the devices; however, the Ansible tasks for local data persistence and file generation are omitted.
 
+### Brocade FOS
 To backup Brocade FOS :
 ```ini
     - name: "Define context depending on brocade name"
@@ -24,6 +25,7 @@ To backup Brocade FOS :
       delegate_to: localhost
 ```
 
+### IBM storage
 To backup IBM storage :
 ```ini
     - name: "Trigger the configuration backup (svcconfig backup)"
@@ -36,9 +38,9 @@ To backup IBM storage :
       register: scp_output
       delegate_to: localhost
 ```
-**Reference : ** 
+**Reference :** 
 [https://www.ibm.com/docs/en/flashsystem-5x00?topic=STHGUJ/com.ibm.storwize.v5100.841.doc/svc_clustconfbackuptsk_1e4k69.html](https://www.ibm.com/docs/en/flashsystem-5x00?topic=STHGUJ/com.ibm.storwize.v5100.841.doc/svc_clustconfbackuptsk_1e4k69.html)
 
-
+### SANnav
 SANnav can create a daily backup. 
 Do not forget to push this backup outside SANnav.
