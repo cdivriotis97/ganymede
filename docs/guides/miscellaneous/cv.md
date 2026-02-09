@@ -1,67 +1,54 @@
 ---
-title: Mon Profil
-description: CV et Parcours Professionnel
+title: Profile
+description: Professional Background and Resume
 icon: material/account-circle
 hide:
   - toc
 ---
 
-# 👋 Bonjour, je suis [Ton Prénom] [Ton Nom]
-
 <div style="display: flex; align-items: center; gap: 20px; margin-bottom: 20px;">
-    <img src="https://ui-avatars.com/api/?name=Ton+Nom&background=0D8ABC&color=fff&size=128" alt="Photo de profil" style="border-radius: 50%; width: 100px;">
+    <img src="../../assets/profile.jpeg" alt="Profile Picture" style="border-radius: 50%; width: 110px; height: 110px; object-fit: cover;">
     <div>
-        <h2>[Ton Intitulé de Poste Actuel]</h2>
-        <p style="opacity: 0.8;">Passionné par [Ta passion ou spécialité principale]</p>
+        <h2>[Your Current Job Title]</h2>
+        <p style="opacity: 0.8;">[Your main tagline or specialization]</p>
     </div>
 </div>
 
 ---
 
-[:material-email: me@example.com](mailto:me@example.com){ .md-button .md-button--primary }
-[:material-linkedin: LinkedIn](https://linkedin.com/in/tonprofil){ .md-button }
-[:material-github: GitHub](https://github.com/tonprofil){ .md-button }
-[:material-file-download: Télécharger PDF](#){ .md-button }
+[:material-email: Contact Me](mailto:me@example.com){ .md-button .md-button--primary }
+[:material-github: GitHub](https://github.com/cdivriotis97){ .md-button }
+[:material-mastodon: Mastodon](https://mastodon.social/@cdivriotis){ .md-button }
+
+[:material-file-download: Download PDF](../../assets/resume.pdf){ .md-button }
 
 ---
 
-## 🎯 À propos de moi
+## About Me
 
-Bienvenue dans la section **Miscellaneous**. J'ai intégré mon parcours professionnel ici pour garder une trace de mes évolutions.
+Welcome to my miscellaneous section. This area serves as a living document of my professional journey.
 
-> **Résumé :** [Insère ici un paragraphe de 3-4 lignes qui résume qui tu es. Exemple: Développeur Full Stack avec 5 ans d'expérience, spécialisé dans l'architecture cloud et l'optimisation des performances web. J'aime résoudre des problèmes complexes et apprendre de nouvelles technologies.]
+> **Summary:** I am a **System Administrator** with a strong background in the **banking sector**. I tend to involve myself in a bit of everything—from infrastructure to automation—preferring a broad approach to IT challenges. I am also deeply committed to the **Open Source** philosophy and believe in the importance of shared knowledge.
 
 ---
 
-## 🧭 Naviguer dans mon CV
+## Career Navigation
 
-Sélectionnez une section pour voir les détails :
+Select a section below to view details:
 
 <div class="grid cards" markdown>
 
--   :material-briefcase: **Expérience Professionnelle**
+-   :material-briefcase: **Experience**
     
-    Découvrez mon parcours en entreprise et mes rôles précédents.
+    A timeline of my professional roles and responsibilities.
     
-    [:arrow_right: Voir mes expériences](./experience.md)
+    [:arrow_right: View Experience](./experience.md)
 
--   :material-school: **Éducation & Formation**
+-   :material-school: **Education**
     
-    Mes diplômes, certifications et parcours académique.
+    My academic background, degrees, and certifications.
     
-    [:arrow_right: Voir ma formation](./education.md)
-
--   :material-xml: **Compétences Techniques**
-    
-    La liste de mes langages, frameworks et outils maîtrisés.
-    
-    [:arrow_right: Voir mes skills](./skills.md)
-
--   :material-rocket-launch: **Projets & Réalisations**
-    
-    Une sélection de mes projets personnels et open-source.
-    
-    [:arrow_right: Voir mes projets](./projects.md)
+    [:arrow_right: View Education](./education.md)
 
 </div>
 
