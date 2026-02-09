@@ -1,9 +1,9 @@
 # Backup Nexus & Cisco configuration with Ansible
 
 **Requirements :**
- * cisco-nxos collection
- * ansible-netcommon collection
- * cisco-ios collection
+* **cisco-nxos** collection
+* **ansible-netcommon** collection
+* **cisco-ios** collection
 
 This outlines the primary commands to back up the devices; however, the Ansible tasks for local data persistence and file generation are omitted.
 
@@ -21,7 +21,7 @@ To backup Nexus :
       register: startup_cfg
 ```
 
-### Brocade IOS
+### Cisco IOS
 To backup IOS :
 ```ini
     - name: get running-config
@@ -39,7 +39,7 @@ To backup IOS :
 
 ### Ansible Network Connection
 For network devices, you will need specific connection variables to access the devices :
- * [https://docs.ansible.com/ansible/latest/collections/ansible/netcommon/network_cli_connection.html](https://docs.ansible.com/ansible/latest/collections/ansible/netcommon/network_cli_connection.html).
+* [https://docs.ansible.com/ansible/latest/collections/ansible/netcommon/network_cli_connection.html](https://docs.ansible.com/ansible/latest/collections/ansible/netcommon/network_cli_connection.html).
 
 ```ini
 [all:vars]
