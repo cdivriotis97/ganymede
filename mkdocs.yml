@@ -43,11 +43,14 @@ markdown_extensions:
   - attr_list
   - md_in_html
   - pymdownx.blocks.caption
+  - pymdownx.emoji:
+      emoji_index: pymdownx.emoji.twemoji
+      emoji_generator: pymdownx.emoji.to_svg
 
 nav:
   - Home: index.md
   - Miscellaneous:
-    #- About Me: about.md
+    - About Me: guides/aboutme/index.md
     - My Notes: guides/miscellaneous/notes.md
   - AIX Cookbook:
     - AIX Concepts: guides/aix/general.md
