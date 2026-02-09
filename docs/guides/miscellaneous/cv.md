@@ -14,8 +14,8 @@ hide:
              style="border-radius: 50%; object-fit: cover;">
     </div>
     <div style="margin-left: 20px;">
-        <h2 style="margin:0;">[Your Name]</h2>
-        <p style="margin:0;">System Administrator<br>
+        <h2 style="margin:0;">DIVRIOTIS Constantin</h2>
+        <p style="margin:0;">UNIX Administrator<br>
         <small>Banking Industry | Open Source Advocate</small></p>
     </div>
 </div>
