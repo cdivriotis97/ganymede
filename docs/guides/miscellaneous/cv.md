@@ -7,7 +7,7 @@ hide:
 
 <div style="display: flex; align-items: center; margin-bottom: 20px;">
     <div style="flex-shrink: 0;">
-        <img src="../assets/profile.jpg" 
+        <img src="../../assets/profile.png" 
              alt="Profile Picture" 
              width="120" 
              height="120" 
@@ -35,7 +35,10 @@ Welcome to Professional Background section. This area serves as a living documen
 
 !!! question "Summary"
 
-    I am a **System Administrator** with a strong background in the **banking sector**. I tend to involve myself in a bit of everything—from infrastructure to automation—preferring a broad approach to IT challenges. I am also deeply committed to the **Open Source** philosophy and believe in the importance of shared knowledge.
+    I am a **System Administrator** with a strong background in the **banking sector**. 
+    I tend to involve myself in a bit of everything—from infrastructure to automation—preferring a broad approach to IT challenges. 
+    I am also deeply committed to the **Open Source** philosophy and believe in the importance of shared knowledge.
+
 ---
 
 ## Career Navigation
