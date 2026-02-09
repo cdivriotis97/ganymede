@@ -6,7 +6,7 @@ hide:
 ---
 
 <div style="display: flex; align-items: center; gap: 20px; margin-bottom: 20px;">
-    <img src="../../assets/profile.jpeg" alt="Profile Picture" style="border-radius: 50%; width: 110px; height: 110px; object-fit: cover;">
+    <img src="../../assets/profile.png" alt="Profile Picture" style="border-radius: 50%; width: 110px; height: 110px; object-fit: cover;">
     <div>
         <h2>UNIX Administrator</h2>
         <p style="opacity: 0.8;">Constantly Evolving</p>
