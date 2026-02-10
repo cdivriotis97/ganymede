@@ -7,7 +7,7 @@ hide:
 
 <div style="display: flex; align-items: center; gap: 25px; margin-bottom: 30px;">
     <figure markdown="span">
-  ![profile](../../assets/profile.png){ width="300" }
+        ![profile](../../assets/profile.png){ width="100" }
     </figure>
     <div>
         <h2 style="margin: 0;">DIVRIOTIS Constantin</h2>
