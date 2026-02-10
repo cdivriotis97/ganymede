@@ -3,7 +3,10 @@ title: Profile
 description: Professional Background and Resume
 
 ---
-
+![Enabling Proton](./../../assets/profile.png){ width="300" }
+/// caption
+Enabling Proton
+///
 <div style="display: flex; align-items: center; gap: 25px; margin-bottom: 30px;">
     <img src="./../../assets/profile.png" 
          alt="Profile Picture" 
