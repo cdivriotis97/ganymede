@@ -27,7 +27,7 @@ theme:
     - navigation.path
     - search.suggest
     - search.share
-    #- content.action.edit
+    #- content.action.edit # to check https://github.com/squidfunk/mkdocs-material/discussions/6850
     - content.code.copy
     - content.code.select
     - content.tabs.link
@@ -50,7 +50,7 @@ markdown_extensions:
 nav:
   - Home: index.md
   - Miscellaneous:
-    - Professional Background: guides/miscellaneous/cv.md
+    - My CV: guides/miscellaneous/cv.md
     - My Notes: guides/miscellaneous/notes.md
   - AIX Cookbook:
     - AIX Concepts: guides/aix/general.md
