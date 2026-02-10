@@ -5,17 +5,24 @@ hide:
   - toc
 ---
 
-<div style="display: flex; align-items: center; gap: 25px; margin-bottom: 30px;" markdown="1">
-    ![profile](../assets/profile.png){ align=left width="100" style="border-radius: 50%; border: 2px solid #ddd;" }
-    <div markdown="1">
+<div style="display: flex; align-items: center; gap: 25px; margin-bottom: 30px;">
+    <img src="../../assets/profile.png" 
+         alt="Profile Picture" 
+         style="width: 120px; 
+                height: 120px; 
+                border-radius: 50%; 
+                object-fit: cover; 
+                border: 1px solid #eee;">
+    
     <div>
-        <h2 style="margin: 0;">DIVRIOTIS Constantin</h2>
+        <h2 style="margin: 0;">[Your Name]</h2>
         <p style="margin: 5px 0 0 0;">
             <strong>UNIX Administrator</strong><br>
             <span style="opacity: 0.8;">Banking Industry | Open Source Advocate</span>
         </p>
     </div>
 </div>
+
 ---
 
 [:material-email: Contact Me](mailto:mentor-95.decagon@icloud.com){ .md-button .md-button--primary }
@@ -29,7 +36,7 @@ hide:
 
 I am a **UNIX Administrator** with a strong background in the **banking sector**. 
 
-I tend to involve myself in a bit of everything—from infrastructure to automation—preferring a broad approach to IT challenges. 
+I tend to involve myself in a bit of everything — from infrastructure to automation — preferring a broad approach to IT challenges. 
 
 I am also deeply committed to the **Open Source** philosophy and believe in the importance of shared knowledge.
 
