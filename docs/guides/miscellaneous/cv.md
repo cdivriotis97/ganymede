@@ -5,10 +5,9 @@ hide:
   - toc
 ---
 
-<div style="display: flex; align-items: center; gap: 25px; margin-bottom: 30px;">
-    <figure markdown="span">
-        ![profile](../../assets/profile.png){ width="100" }
-    </figure>
+<div style="display: flex; align-items: center; gap: 25px; margin-bottom: 30px;" markdown="1">
+    ![profile](../assets/profile.png){ align=left width="100" style="border-radius: 50%; border: 2px solid #ddd;" }
+    <div markdown="1">
     <div>
         <h2 style="margin: 0;">DIVRIOTIS Constantin</h2>
         <p style="margin: 5px 0 0 0;">
@@ -29,7 +28,9 @@ hide:
 ## About Me
 
 I am a **UNIX Administrator** with a strong background in the **banking sector**. 
+
 I tend to involve myself in a bit of everything—from infrastructure to automation—preferring a broad approach to IT challenges. 
+
 I am also deeply committed to the **Open Source** philosophy and believe in the importance of shared knowledge.
 
 ---
