@@ -6,13 +6,9 @@ hide:
 ---
 
 <div style="display: flex; align-items: center; gap: 25px; margin-bottom: 30px;">
-    <img src="../assets/profile.png" 
-         alt="Profile Picture" 
-         style="width: 120px; 
-                height: 120px; 
-                border-radius: 50%; 
-                object-fit: cover; 
-                border: 1px solid #eee;">
+    <figure markdown="span">
+  ![profile](../../assets/profile.png){ width="300" }
+    </figure>
     <div>
         <h2 style="margin: 0;">DIVRIOTIS Constantin</h2>
         <p style="margin: 5px 0 0 0;">
