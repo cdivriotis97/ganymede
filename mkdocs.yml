@@ -27,7 +27,7 @@ theme:
     - navigation.path
     - search.suggest
     - search.share
-    - content.action.edit
+    #- content.action.edit
     - content.code.copy
     - content.code.select
     - content.tabs.link

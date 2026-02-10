@@ -8,9 +8,11 @@ description: Professional Background and Resume
 ![profile](./../../assets/profile.png){ style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; border: 1px solid #eee;" }
 
 <div markdown="1">
-## [Your Name]
+## Constantin Divriotis
 **UNIX Administrator**
-*Banking Industry | Open Source Advocate*
+
+Banking Industry | Open Source Enthusiast & FOSS Supporter
+
 </div>
 
 </div>
