@@ -5,19 +5,14 @@ hide:
   - toc
 ---
 
-<div style="display: flex; align-items: center; margin-bottom: 20px;">
-    <div style="flex-shrink: 0;">
-        <img src="../../assets/profile.png" 
-             alt="Profile Picture" 
-             width="120" 
-             height="120" 
-             style="border-radius: 50%; object-fit: cover;">
-    </div>
-    <div style="margin-left: 20px;">
-        <h2 style="margin:0;">DIVRIOTIS Constantin</h2>
-        <p style="margin:0;">UNIX Administrator<br>
-        <small>Banking Industry | Open Source Advocate</small></p>
-    </div>
+<div style="display: flex; align-items: center; gap: 25px; margin-bottom: 30px;">
+
+![Profile Picture](../../assets/profile.png){ style="width:120px; border-radius:100%; object-fit:cover; border: 1px solid #eee" }
+
+<div>
+**UNIX Administrator** *Banking Industry | Open Source Advocate*
+</div>
+
 </div>
 
 ---
@@ -31,33 +26,21 @@ hide:
 
 ## About Me
 
-Welcome to Professional Background section. This area serves as a living document of my professional journey.
-
-!!! question "Summary"
-
-    I am a **System Administrator** with a strong background in the **banking sector**. 
-    I tend to involve myself in a bit of everything—from infrastructure to automation—preferring a broad approach to IT challenges. 
-    I am also deeply committed to the **Open Source** philosophy and believe in the importance of shared knowledge.
+I am a **UNIX Administrator** with a strong background in the **banking sector**. 
+I tend to involve myself in a bit of everything—from infrastructure to automation—preferring a broad approach to IT challenges. 
+I am also deeply committed to the **Open Source** philosophy and believe in the importance of shared knowledge.
 
 ---
 
 ## Career Navigation
 
-Select a section below to view details:
-
 <div class="grid cards" markdown>
 
--   :material-briefcase: **Experience**
-    
+-   :office: [**Experience**](./experience.md)
     A timeline of my professional roles and responsibilities.
-    
-    [:arrow_right: View Experience](./experience.md)
 
--   :material-school: **Education**
-    
+-   :books: [**Education**](./education.md)
     My academic background, degrees, and certifications.
-    
-    [:arrow_right: View Education](./education.md)
 
 </div>
 
