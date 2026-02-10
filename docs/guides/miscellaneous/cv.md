@@ -5,7 +5,7 @@ description: Professional Background and Resume
 ---
 
 <div style="display: flex; align-items: center; gap: 25px; margin-bottom: 30px;">
-    <img src="../assets/profile.png" 
+    <img src="./../../assets/profile.png" 
          alt="Profile Picture" 
          style="width: 120px; 
                 height: 120px; 
