@@ -36,4 +36,4 @@ hide:
 
 ---
 
-[:material-arrow-left: Back to Profile](./index.md){ .md-button }
+[:material-arrow-left: Back to Profile](./cv.md){ .md-button }

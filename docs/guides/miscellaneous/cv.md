@@ -5,7 +5,7 @@ description: Professional Background and Resume
 ---
 <div style="display: flex; align-items: center; gap: 25px; margin-bottom: 30px;" markdown="1">
 
-![profile](./../../assets/profile.JPEG){ style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; border: 1px solid #eee;" }
+![profile](./../../assets/profile.png){ style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; border: 1px solid #eee;" }
 
 <div markdown="1">
 ## Constantin Divriotis
