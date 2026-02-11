@@ -6,7 +6,7 @@ hide:
   - toc
 ---
 
-# :material-briefcase: Professional Experience
+# Professional Experience
 
 ---
 

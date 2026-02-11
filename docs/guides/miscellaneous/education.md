@@ -23,7 +23,6 @@ hide:
 **[University of Strasbourg](https://www.unistra.fr/fr)**
 *2015 - 2018*
 
-- **Distinction:** With Honors
 - Fundamental computer science concepts, algorithms, and software development.
 
 ---
@@ -31,8 +30,6 @@ hide:
 ### **Scientific Baccalaureat**
 **General and Technology High School**
 *2015*
-
-- **Distinction:** Graduated with Honors
 
 ---
 
