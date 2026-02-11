@@ -29,7 +29,7 @@ hide:
 ---
 
 ### **Scientific Baccalaureat**
-**General and Technology High School, Haguenau**
+**General and Technology High School**
 *2015*
 
 - **Distinction:** Graduated with Honors

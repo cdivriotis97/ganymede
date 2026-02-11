@@ -5,13 +5,13 @@ description: Professional Background and Resume
 ---
 <div style="display: flex; align-items: center; gap: 25px; margin-bottom: 30px;" markdown="1">
 
-![profile](./../../assets/profile.png){ style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; border: 1px solid #eee;" }
+![profile](./../../assets/picture.png){ style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; border: 1px solid #eee;" }
 
 <div markdown="1">
 ## Constantin Divriotis
 **UNIX Administrator**
 
-Banking Industry | Open Source Enthusiast & FOSS Supporter
+Banking Industry | Open Source Enthusiast
 
 </div>
 
@@ -22,7 +22,6 @@ Banking Industry | Open Source Enthusiast & FOSS Supporter
 [:material-email: Contact Me](mailto:mentor-95.decagon@icloud.com){ .md-button .md-button--primary }
 [:material-github: GitHub](https://github.com/cdivriotis97){ .md-button }
 [:material-mastodon: Mastodon](https://mastodon.social/@cdivriotis){ .md-button }
-[:material-file-download: Download PDF](../../assets/resume.pdf){ .md-button }
 
 ---
 
