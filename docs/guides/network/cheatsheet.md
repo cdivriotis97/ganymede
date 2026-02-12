@@ -217,7 +217,7 @@ set protocols ospf3 area 0.0.0.0 interface <interface>
 
 ---
 
-## 🏗 Switching & MPLS
+## Switching & MPLS
 
 ### VLANs (Cisco)
 
@@ -240,7 +240,7 @@ set protocols ospf3 area 0.0.0.0 interface <interface>
 
 ---
 
-## 🔍 Debugging Tips
+## Debugging Tips
 
 * **Check Tables:** Always start with `show ip route` or `run show route`.
 * **Follow the Path:** Use `ping` and `traceroute`.
