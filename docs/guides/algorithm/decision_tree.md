@@ -32,6 +32,14 @@ $$
 \text{Information Gain} = \text{Entropy (Parent)} - \text{Weighted Entropy (Children)}
 $$
 
+$$
+\cos x=\sum_{k=0}^{\infty}\frac{(-1)^k}{(2k)!}x^{2k}
+$$
+
+$$
+\text{Information Gain} = \text{Entropy (Parent)} - \text{Weighted Entropy (Children)}
+$$
+
 The model traverses every possible feature and value to find the split that results in the highest Information Gain.
 
 !!! note "Greedy Algorithm"
