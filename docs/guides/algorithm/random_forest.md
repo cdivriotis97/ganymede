@@ -19,6 +19,8 @@ A decision tree is trained independently for each bootstrapped dataset. Because 
 
 ### 3. Aggregation (The Vote)
 To make a final prediction for a new data point:
+
+
 * Every tree in the forest runs its own prediction.
 * **Classification:** The final result is decided by **majority vote**.
 * **Regression:** The final result is the **average** of all tree outputs.

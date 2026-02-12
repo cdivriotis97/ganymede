@@ -3,13 +3,14 @@
 Decision trees are supervised learning algorithms used to classify data by asking a series of logical questions.
 
 ## Core Concept
-The goal is to classify data points (for example, red and green dots) by recursively splitting the dataset based on specific features [00:00:42].
+The goal is to classify data points (for example, red and green dots) by recursively splitting the dataset based on specific features.
 Yes, I can certainly do that! Using **Markdown links** with the specific timestamps makes your documentation much more interactive, as clicking them will take you directly to that exact moment in the video.
 
-Here is the updated **Algorithms Cookbook** entry for **Decision Trees**, with every timestamp converted into a direct YouTube link.
-
 ### Structure of the Tree
-* **Decision Nodes:** These represent conditions or questions (e.g., is $X_0 \leq -12$?).
+* **Decision Nodes:** These represent conditions or questions e.g
+$$
+$X_0 \leq -12$?
+$$
 * **Leaf Nodes:** The final "branches" that provide the classification outcome.
 * **Paths:**
     * Exit to the **Left**: Represents **Yes / True** (condition met).
@@ -22,13 +23,17 @@ Since there are many possible ways to split data, the algorithm must identify th
 
 ### Entropy (Measuring Uncertainty)
 Entropy is used to quantify the impurity or uncertainty within a group of data.
+
+
 * **Entropy = 1:** Highest uncertainty (e.g., a 50/50 mix of red and green dots).
 * **Entropy = 0:** Perfectly classified data. This is known as a **Pure Node**.
 
 ### Calculating Information Gain
 To decide which feature to split on, the algorithm subtracts the entropy of the "child" nodes from the entropy of the "parent" node:
 
-$$\text{Information Gain} = \text{Entropy (Parent)} - \text{Weighted Entropy (Children)}$$
+$$
+\text{Information Gain} = \text{Entropy (Parent)} - \text{Weighted Entropy (Children)}
+$$
 
 The model traverses every possible feature and value to find the split that results in the highest Information Gain.
 
