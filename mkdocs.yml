@@ -71,6 +71,11 @@ nav:
     - Zabbix: guides/monitoring/zabbix.md
   - Network Cookbook:
     - Backup Configuration with Ansible: guides/network/backup_with_ansible.md
+  - Database Cookbook:
+    - InfluxDB: guides/database/influxdb.md
+  - Algorithms Cookbook:
+    - Decision Tree: guides/algorithm/decision_tree.md
+    - Random Forest: guides/algorithm/random_forest.md
 
 
 extra:
