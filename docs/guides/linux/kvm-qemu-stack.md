@@ -4,7 +4,7 @@ This guide covers the creation, configuration, and lifecycle management of Virtu
 
 ---
 
-## 🏗 Create a VM from an ISO Image
+## Create a VM from an ISO Image
 
 To install a new virtual machine from an ISO file, use the `virt-install` command.
 
