@@ -74,6 +74,7 @@ nav:
     - Troubleshooting: guides/linux/troubleshooting.md
     - Useful Commands: guides/linux/commands.md
     - SSH: guides/linux/ssh.md
+    - KVM-QEMU-Libvirt : guides/linux/kvm-qemu-stack.md
   - Storage Cookbook:
     - Backup Configuration with Ansible: guides/storage/backup_with_ansible.md
     - Troubleshooting: guides/storage/troubleshooting.md
