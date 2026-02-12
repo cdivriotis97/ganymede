@@ -9,6 +9,8 @@ A Random Forest is essentially a collection of many **Decision Trees** working t
 
 ### 1. Bootstrapping (Data Sampling)
 The algorithm creates new versions of the original dataset through a process called **Bootstrapping**:
+
+
 * **Row Sampling:** New datasets are created by randomly picking rows from the original data *with replacement* (meaning the same row can appear multiple times in one set).
 * **Feature Sampling:** For each tree, only a random subset of columns (features) is selected.
 
@@ -31,7 +33,7 @@ To make a final prediction for a new data point:
 The term **Bagging** is a combination of **B**ootstrap + **Agg**regat**ing**. 
 
 !!! tip "Pro Tip: Square Root Rule"
-    When selecting random features for classification, a common best practice is to choose a number of features equal to the square root of the total number of features ($\sqrt{n}$).
+    When selecting random features for classification, a common best practice is to choose a number of features equal to the square root of the total number of features ( $\sqrt{n}$ ).
 
 ---
 **Source:** [Random Forest Algorithm Clearly Explained!](ttps://www.youtube.com/watch?v=ZVR2Way4nwQ)

@@ -7,10 +7,7 @@ The goal is to classify data points (for example, red and green dots) by recursi
 Yes, I can certainly do that! Using **Markdown links** with the specific timestamps makes your documentation much more interactive, as clicking them will take you directly to that exact moment in the video.
 
 ### Structure of the Tree
-* **Decision Nodes:** These represent conditions or questions e.g
-$$
-$X_0 \leq -12$?
-$$
+* **Decision Nodes:** These represent conditions or questions e.g $X_0 \leq -12$?$
 * **Leaf Nodes:** The final "branches" that provide the classification outcome.
 * **Paths:**
     * Exit to the **Left**: Represents **Yes / True** (condition met).
