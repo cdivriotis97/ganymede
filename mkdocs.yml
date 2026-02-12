@@ -81,6 +81,7 @@ nav:
     - Zabbix: guides/monitoring/zabbix.md
   - Network Cookbook:
     - Backup Configuration with Ansible: guides/network/backup_with_ansible.md
+    - Commands Cheatsheet: guides/network/cheatsheet.md
   - Database Cookbook:
     - InfluxDB: guides/database/influxdb.md
   - Algorithms Cookbook:
