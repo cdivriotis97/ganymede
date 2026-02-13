@@ -7,14 +7,18 @@ The algorithm works by maintaining a record of the shortest distance discovered 
 
 ### Key Data Structures
 To track the progress, the algorithm uses:
+
 * **Unvisited List:** A list containing all nodes that haven't been fully processed yet.
+
 * **Distance Table:** A table tracking:
     * The current **Shortest Distance** from the source to each node.
     * The **Previous Node** that led to that shortest distance (used to reconstruct the path later).
 
+
 ## Step-by-Step Process
 
 ### 1. Initialization
+
 * Set the distance to the **Source Node** to `0`.
 * Set the distance to all other nodes to **Infinity** ($\infty$).
 * Mark all nodes as **Unvisited**.
