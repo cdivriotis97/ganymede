@@ -87,7 +87,7 @@ nav:
     - InfluxDB: guides/database/influxdb.md
   - Algorithms Cookbook:
     - AlGoHome: guides/algorithm/algohome.md
-    - Djikstra: guides/algorithm/djikstra.md
+    - Dijkstra: guides/algorithm/dijkstra.md
     - Decision Tree: guides/algorithm/decision_tree.md
     - Random Forest: guides/algorithm/random_forest.md
 
