@@ -30,11 +30,6 @@ ip link set dev <interface> down
 
 ## Cisco Essentials
 
-### Connection & Basics
-
-* **Connect:** `telnet console-api <2000 + router_number>`
-* **Reboot:** `reload`
-
 ### Configuration Management
 
 ```ios
@@ -62,10 +57,6 @@ write erase
 ---
 
 ## Juniper (Junos) Essentials
-
-### Connection
-
-* **Console:** `telnet console4-api <2000 + router_number>`
 
 ### Initial Setup (Root Password)
 

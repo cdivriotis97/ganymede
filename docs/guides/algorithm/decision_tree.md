@@ -4,7 +4,6 @@ Decision trees are supervised learning algorithms used to classify data by askin
 
 ## Core Concept
 The goal is to classify data points (for example, red and green dots) by recursively splitting the dataset based on specific features.
-Yes, I can certainly do that! Using **Markdown links** with the specific timestamps makes your documentation much more interactive, as clicking them will take you directly to that exact moment in the video.
 
 ### Structure of the Tree
 * **Decision Nodes:** These represent conditions or questions e.g $X_0 \leq -12$?$
