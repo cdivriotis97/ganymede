@@ -75,6 +75,8 @@ nav:
     - Useful Commands: guides/linux/commands.md
     - SSH: guides/linux/ssh.md
     - KVM-QEMU-Libvirt : guides/linux/kvm-qemu-stack.md
+    - Use Let's encrypt with Nginx: guides/linux/lets-encrypt.md
+    - SSL-TLS cheatsheet : guides/linux/ssl_tls.md
   - Storage Cookbook:
     - Backup Configuration with Ansible: guides/storage/backup_with_ansible.md
     - Troubleshooting: guides/storage/troubleshooting.md
@@ -82,7 +84,8 @@ nav:
     - Zabbix: guides/monitoring/zabbix.md
   - Network Cookbook:
     - Backup Configuration with Ansible: guides/network/backup_with_ansible.md
-    - Commands Cheatsheet: guides/network/cheatsheet.md
+    - Commands Cheatsheet: guides/network/network-cheatsheet.md
+    - Brocade SAN Cheatsheet: guides/network/brocade-cheatsheet.md
   - Database Cookbook:
     - InfluxDB: guides/database/influxdb.md
   - Algorithms Cookbook:
