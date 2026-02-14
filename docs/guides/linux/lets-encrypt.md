@@ -122,4 +122,5 @@ sudo certbot certificates
 ```
 
 !!! info "Security Note"
-Always ensure Port 80 remains open even after switching to HTTPS. Let's Encrypt requires it to perform the automated renewal challenges.
+
+    Always ensure Port 80 remains open even after switching to HTTPS. Let's Encrypt requires it to perform the automated renewal challenges.

@@ -119,9 +119,9 @@ openssl x509 -noout -modulus -in certificate.crt | openssl md5
 openssl rsa -noout -modulus -in privateKey.key | openssl md5
 
 ```
-
 !!! info "Security Note"
-Always protect your .key and .pfx files. They contain sensitive private data that should never be shared or committed to version control systems.
+
+    Always protect your .key and .pfx files. They contain sensitive private data that should never be shared or committed to version control systems.
 
 ```
 
