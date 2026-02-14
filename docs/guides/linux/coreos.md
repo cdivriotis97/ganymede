@@ -58,9 +58,9 @@ systemd:
         WantedBy=multi-user.target
 
 ```
+!!! note "Security Note"
 
-> [!IMPORTANT]
-> **Sécurité :** L'utilisation d'un mot de passe est utile pour le débogage en console locale (TTY), mais la clé SSH reste la méthode recommandée pour l'accès distant. Le fichier de connexion réseau doit impérativement avoir un `mode: 0600`.
+    L'utilisation d'un mot de passe est utile pour le débogage en console locale (TTY), mais la clé SSH reste la méthode recommandée pour l'accès distant. Le fichier de connexion réseau doit impérativement avoir un `mode: 0600`.
 
 ### 2. Transpilation
 
@@ -106,8 +106,11 @@ systemctl reboot
 
 FCOS uses **Quadlet** to treat containers as native systemd units. This ensures containers start automatically and follow standard service dependencies.
 
-> [!NOTE]
-> Store `.container` files in `/etc/containers/systemd/`. Systemd will automatically generate the corresponding units upon reloading.
+
+!!! note "Security Note"
+
+    Store `.container` files in `/etc/containers/systemd/`. Systemd will automatically generate the corresponding units upon reloading.
+
 
 ---
 
