@@ -1,14 +1,12 @@
 # KVM, QEMU, and Libvirt Management
 
-This guide covers the creation, configuration, and lifecycle management of Virtual Machines (VMs) using the KVM/QEMU stack.
-
 ---
 
 ## Create a VM from an ISO Image
 
 To install a new virtual machine from an ISO file, use the `virt-install` command.
 
-### Key `virt-install` Parameters:
+### Key virt-install Parameters:
 
 | Parameter | Description |
 | :--- | :--- |
@@ -17,7 +15,7 @@ To install a new virtual machine from an ISO file, use the `virt-install` comman
 | `--os-variant` | Fine-tuned optimization for specific versions (e.g., 'fedora8', 'win10'). |
 | `--ram` | Memory allocated to the guest in MiB. |
 | `--vcpus` | Number of virtual CPUs to configure. |
-| `--disk path=...` | Storage configuration and path to the media (file or partition). |
+| `--disk path=...` | Storage configuration and path to the media. |
 | `--graphics` | Specifies the graphical display (e.g., 'spice', 'vnc' or 'none'). |
 | `--location` | Source for the installation (ISO, URL, or local directory). |
 | `--extra-args` | Additional kernel command-line arguments for the installer. |
@@ -28,24 +26,35 @@ To install a new virtual machine from an ISO file, use the `virt-install` comman
 
 ## Disk Image Management
 
-### Checking Image Information
-Check the file type and details of a disk image:
+### Advanced QEMU-IMG Commands
+Check the file type and details:
 ```bash
 sudo file /var/lib/libvirt/images/debian9.img
-# Output: /var/lib/libvirt/images/debian9.img: QEMU QCOW Image (v3), 10737418240 bytes
+# Output: QEMU QCOW Image (v3), 10737418240 bytes
 
 ```
 
-### Resizing a Disk Image
+Convert a disk image format (e.g., raw to qcow2):
 
-To increase the size of a cloud image:
+```bash
+qemu-img convert -f raw -O qcow2 image.raw image.qcow2
+
+```
+
+Resize and verify:
 
 ```bash
 qemu-img resize bionic-server-cloudimg-amd64.img 20G
-
-# Verify the change
 qemu-img info bionic-server-cloudimg-amd64.img
-# virtual size: 20G (21474836480 bytes)
+
+```
+
+### Manual QEMU Execution
+
+You can start a VM directly without libvirt for testing purposes:
+
+```bash
+qemu-system-x86_64 -m 1024 -hda debian.qcow2 -cdrom debian-inst.iso -boot d
 
 ```
 
@@ -53,13 +62,12 @@ qemu-img info bionic-server-cloudimg-amd64.img
 
 ## Configure a Pre-defined VM Image
 
-You can download and customize official cloud images without booting them using `virt-customize`.
+Download and customize official cloud images using `virt-customize`:
 
 ```bash
-# Download the image
 wget [https://cloud-images.ubuntu.com/bionic/current/bionic-server-cloudimg-amd64.img](https://cloud-images.ubuntu.com/bionic/current/bionic-server-cloudimg-amd64.img)
 
-# Set root password and remove cloud-init (if not needed)
+# Set root password and remove cloud-init
 sudo virt-customize -a bionic-server-cloudimg-amd64.img --root-password password:coolpass
 sudo virt-customize -a bionic-server-cloudimg-amd64.img --uninstall cloud-init
 
@@ -67,44 +75,43 @@ sudo virt-customize -a bionic-server-cloudimg-amd64.img --uninstall cloud-init
 
 ---
 
-## VM Life-cycle Management
+## VM Life-cycle and Snapshots
 
-### Define and Start a VM
-
-If you have an XML configuration file, use these commands:
+### Define and Start
 
 ```bash
-# Register the VM from an XML file
 virsh define vm.xml
-
-# Start the VM
 virsh start bionic-vm
 
 ```
 
-### List and Console Access
+### Snapshot Management
+
+Libvirt allows taking snapshots of a running or stopped VM (requires qcow2):
 
 ```bash
-# List all virtual machines
-virsh list --all
+# Create a snapshot
+virsh snapshot-create-as --domain bionic-vm --name "AfterConfig" --description "Initial Setup"
 
-# Connect to the serial console
+# List snapshots
+virsh snapshot-list bionic-vm
+
+# Restore a snapshot
+virsh snapshot-revert bionic-vm --snapshotname "AfterConfig"
+
+# Delete a snapshot
+virsh snapshot-delete bionic-vm --snapshotname "AfterConfig"
+
+```
+
+### Console Access
+
+```bash
 virsh console bionic-vm
 
 ```
 
-> **Tip:** To exit the console, use `Ctrl` + `Alt Gr` + `]` (or `Ctrl` + `]`).
-
-### Shutdown and Stop
-
-```bash
-# Graceful shutdown (sends ACPI signal)
-virsh shutdown bionic-vm
-
-# Hard stop (equivalent to pulling the power plug)
-virsh destroy bionic-vm
-
-```
+To exit the console, use `Ctrl` + `Alt Gr` + `]` (or `Ctrl` + `]`).
 
 ---
 
@@ -112,14 +119,12 @@ virsh destroy bionic-vm
 
 ### Virtual Networks
 
-View available networks managed by Libvirt:
-
 ```bash
 virsh net-list --all
 
 ```
 
-The default configuration usually uses a NAT bridge (`virbr0`):
+Default NAT bridge (`virbr0`) configuration:
 
 ```xml
 <network>
@@ -135,9 +140,9 @@ The default configuration usually uses a NAT bridge (`virbr0`):
 
 ```
 
-### Guest Network Configuration (Netplan)
+### Guest Network (Netplan)
 
-Inside the Ubuntu guest, configure `/etc/netplan/01-netcfg.yaml`:
+Configure `/etc/netplan/01-netcfg.yaml`:
 
 ```yaml
 network:
@@ -149,23 +154,25 @@ network:
 
 ```
 
-Apply the configuration:
+Apply: `sudo netplan --debug apply`
+
+---
+
+## Performance and Resource Tuning
+
+### CPU Pinning and Memory
+
+View VM resource usage:
 
 ```bash
-sudo netplan --debug apply
+virsh domstats bionic-vm
 
 ```
 
-### Remote Access
-
-Identify the IP address from the host using ARP:
+Set memory limits on the fly:
 
 ```bash
-arp -na | grep virbr0
-# Example: ? (192.168.122.175) at 52:54:00:5e:cc:8d [ether] on virbr0
-
-# SSH from host to guest
-ssh root@192.168.122.175
+virsh setmem bionic-vm 2048M --config --live
 
 ```
 
@@ -173,9 +180,9 @@ ssh root@192.168.122.175
 
 ## Troubleshooting: Shutdown Issues
 
-If `virsh shutdown` does not work and you are forced to use `virsh destroy`, verify the following:
+If `virsh shutdown` fails:
 
-1. **ACPI Features:** Ensure the VM XML has ACPI enabled:
+1. **ACPI Features:** Ensure the XML has ACPI enabled:
 ```xml
 <features>
   <acpi/>
@@ -186,9 +193,4 @@ If `virsh shutdown` does not work and you are forced to use `virsh destroy`, ver
 
 
 2. **Guest Agent:** Install `qemu-guest-agent` inside the VM.
-3. **Shutdown Timeout:** Check `/etc/init.d/libvirt-guests` settings:
-```bash
-ON_SHUTDOWN=shutdown
-SHUTDOWN_TIMEOUT=300
-
-```
+3. **Emergency Stop:** `virsh destroy bionic-vm`

@@ -122,6 +122,3 @@ openssl rsa -noout -modulus -in privateKey.key | openssl md5
 !!! info "Security Note"
 
     Always protect your .key and .pfx files. They contain sensitive private data that should never be shared or committed to version control systems.
-
-```
-
