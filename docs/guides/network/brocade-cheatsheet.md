@@ -140,5 +140,3 @@ zoneshow | grep -i "21:00:..."
 * **Persistence:** Always run `cfgsave` after your modifications; otherwise, changes may be lost if the switch reboots.
 * **Case Sensitivity:** Command names and Aliases/Zones are often case-sensitive in FOS.
 * **The "no" equivalent:** In Brocade, use `delete` or `remove` commands (e.g., `alidelete`, `zonedelete`, `cfgdelete`).
-
-```

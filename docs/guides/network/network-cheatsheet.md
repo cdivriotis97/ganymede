@@ -231,5 +231,3 @@ set protocols ospf area 0.0.0.0 interface ge-0/0/0.0
 * **LACP status:** `show etherchannel summary` (Cisco) | `run show interfaces terse ae0` (Juniper)
 * **Connectivity:** `ping` / `traceroute`
 * **Packet Capture:** Use **Wireshark** to confirm 802.1Q tags or LACP BPDU exchange.
-
-```

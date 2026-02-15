@@ -62,6 +62,7 @@ nav:
   - Miscellaneous:
     - My CV: guides/miscellaneous/cv.md
     - My Notes: guides/miscellaneous/notes.md
+    - Quick Review - Logitech MX Keys Mini S & MX Master 3S: guides/miscellaneous/mx-series.md
   - AIX Cookbook:
     - AIX Concepts: guides/aix/general.md
     - Troubleshooting: guides/aix/troubleshooting.md
@@ -84,7 +85,7 @@ nav:
     - Zabbix: guides/monitoring/zabbix.md
   - Network Cookbook:
     - Backup Configuration with Ansible: guides/network/backup_with_ansible.md
-    - Commands Cheatsheet: guides/network/network-cheatsheet.md
+    - Network Cheatsheet: guides/network/network-cheatsheet.md
     - Brocade SAN Cheatsheet: guides/network/brocade-cheatsheet.md
   - Database Cookbook:
     - InfluxDB: guides/database/influxdb.md
