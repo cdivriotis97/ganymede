@@ -75,7 +75,25 @@ nmap --script ssh2-enum-algos -sV -p 22 <your-server-ip>
 ```
 This tool confirms that only your chosen secure ciphers (like Chacha20) are visible to potential attackers.
 
+## Tunneling
 
-## Conclusion
+* Access remote server behind the firewall.
 
-SSH hardening is about reducing your attack surface to the absolute minimum. By moving to modern cryptographic standards and regularly auditing your exposure with sshaudit and nmap, you turn your remote access into a truly secure gateway.
+For example access app running on 8080 port for server x.y.z.a
+
+`ssh -L 9000:localhost:8080 ec2-user@x.y.z.a`
+
+Now just open the http://localhost:9000
+
+* Expose the local port to remote server
+
+`ssh -R 9000:localhost:3000 user@example.com`
+
+Now the remote server could access you local app on remote address localhost:9000
+
+## Port forwarding
+
+- Expose local port 2222, forwarding to `10.0.0.179:22` using the remote server  `54.82.45.10`:
+
+`ssh -L 127.0.0.1:2222:10.0.0.179:22 core@54.82.45.109`
+

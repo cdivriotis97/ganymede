@@ -64,17 +64,16 @@ nav:
     - My Notes: guides/miscellaneous/notes.md
     - Quick Review - Logitech MX Keys Mini S & MX Master 3S: guides/miscellaneous/mx-series.md
   - AIX Cookbook:
-    - AIX Concepts: guides/aix/general.md
     - Troubleshooting: guides/aix/troubleshooting.md
     - Useful Commands: guides/aix/commands.md
   - Linux Cookbook: 
-    - Linux Concepts: guides/linux/general.md
     - Steam on Linux: guides/linux/steam.md
     - CoreOS: guides/linux/coreos.md
     - Podman Quadlet: guides/linux/podman-quadlet.md
     - Troubleshooting: guides/linux/troubleshooting.md
     - Useful Commands: guides/linux/commands.md
     - SSH: guides/linux/ssh.md
+    - Systemd: guides/linux/systemd.md
     - KVM-QEMU-Libvirt : guides/linux/kvm-qemu-stack.md
     - Use Let's encrypt with Nginx: guides/linux/lets-encrypt.md
     - SSL-TLS cheatsheet : guides/linux/ssl_tls.md
