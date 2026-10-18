@@ -93,7 +93,10 @@ nav:
     - Dijkstra: guides/algorithm/dijkstra.md
     - Decision Tree: guides/algorithm/decision_tree.md
     - Random Forest: guides/algorithm/random_forest.md
-
+  - Openshift Cookbook:
+    - Troubleshooting: guides/openshift/troubleshooting.md
+    - Tekton: guides/openshift/tekton.md
+    - Useful Commands: guides/openshift/commands.md
 
 extra:
   social:
